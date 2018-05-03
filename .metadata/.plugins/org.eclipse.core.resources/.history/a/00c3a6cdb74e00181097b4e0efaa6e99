@@ -1,0 +1,9 @@
+package spring.tutorials.aop;
+
+public class LoggingAdvice {
+
+	public LoggingAdvice() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,23 @@
+package spring.tutorials.ioc.service.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import org.springframework.context.ApplicationContext;
+
+public class Test1 {
+	ApplicationContext ctx;
+	
+	@BeforeClass
+	private void init() {
+		
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

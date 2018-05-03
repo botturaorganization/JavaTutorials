@@ -1,0 +1,28 @@
+package spring.tutorials.ioc.service.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+public class Test1 {
+	ApplicationContext ctx;
+	
+	@BeforeClass
+	private void init() {
+		
+		ctx = new ClassPathXmlApplicationContext("beans.xml");
+		
+	}
+
+	@Test
+	public void test() {
+		ctx.getBean("");
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,9 @@
+package spring.tutorials.ioc.services.impl.mock;
+
+public class AnagrafeServiceMockImpl {
+
+	public AnagrafeServiceMockImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

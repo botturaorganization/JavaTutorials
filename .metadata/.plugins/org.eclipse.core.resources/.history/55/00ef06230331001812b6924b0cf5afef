@@ -1,0 +1,5 @@
+package spring.tutorials.ioc.services;
+
+public interface AnagrafeService {
+     public void add(Anagrafe a) throws AnagrafeException;
+}

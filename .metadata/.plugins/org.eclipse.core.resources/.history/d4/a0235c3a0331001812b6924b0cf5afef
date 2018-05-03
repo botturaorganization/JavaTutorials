@@ -1,0 +1,5 @@
+package spring.tutorials.ioc.services;
+
+public class Anagrafe {
+
+}

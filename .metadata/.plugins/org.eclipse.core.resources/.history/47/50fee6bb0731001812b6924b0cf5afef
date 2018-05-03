@@ -1,0 +1,30 @@
+package spring.tutorials.ioc.service.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import spring.tutorials.ioc.services.AnagrafeService;
+
+
+public class Test1 {
+	ApplicationContext ctx;
+	
+	@BeforeClass
+	private void init() {
+		
+		ctx = new ClassPathXmlApplicationContext("beans.xml");
+		
+	}
+
+	@Test
+	public void test() {
+		AnagrafeService mock= (AnagrafeService) ctx.getBean("mockService");
+		fail("Not yet implemented");
+	}
+
+}
