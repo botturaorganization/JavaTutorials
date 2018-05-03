@@ -1,15 +1,11 @@
 package spring.tutorials.aop.test;
 
-import static org.junit.Assert.fail;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.tutorials.aop.Student;
-import spring.tutorials.ioc.services.AnagrafeException;
-import spring.tutorials.ioc.services.AnagrafeService;
 
 
 public class Test2 {
@@ -23,9 +19,16 @@ public class Test2 {
 	}
 
 	@Test
-	public void test() {
+	public void testGetName() {
 		Student student= (Student) ctx.getBean("student");
 		student.getName();
 	}
+	
+	@Test
+	public void testException() {
+		Student student= (Student) ctx.getBean("student");
+		student.printThrowException();
+	}
 
+	
 }
